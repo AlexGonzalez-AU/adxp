@@ -4,3 +4,6 @@
 [submodule "GroupPolicyEx"]
 	path = GroupPolicyEx
 	url = https://github.com/AlexGonzalez-AU/GroupPolicyEx.git
+[submodule "SecEditEx"]
+	path = SecEditEx
+	url = https://github.com/AlexGonzalez-AU/SecEditEx.git
