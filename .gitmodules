@@ -1,3 +1,6 @@
 [submodule "ActiveDirectoryEx"]
 	path = ActiveDirectoryEx
 	url = https://github.com/AlexGonzalez-AU/ActiveDirectoryEx.git
+[submodule "GroupPolicyEx"]
+	path = GroupPolicyEx
+	url = https://github.com/AlexGonzalez-AU/GroupPolicyEx
