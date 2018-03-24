@@ -1,0 +1,3 @@
+[submodule "ActiveDirectoryEx"]
+	path = ActiveDirectoryEx
+	url = https://github.com/AlexGonzalez-AU/ActiveDirectoryEx.git
