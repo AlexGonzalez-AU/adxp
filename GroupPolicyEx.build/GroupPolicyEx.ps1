@@ -5,6 +5,7 @@ Get-Content -Path ..\GroupPolicyEx\Modules\GroupPolicyEx.psd1 |
     Select-Object -ExpandProperty Line |
     ForEach-Object {
         $module += Get-Content -Path $_.Trim().Trim(",").Trim("'").ToLower().Replace('..\cmdlets\','..\GroupPolicyEx\CmdLets\')
+        $module += ""
     }
 
 $module += @'
@@ -20,4 +21,3 @@ if (-not (Get-Module -Name GroupPolicy)) {
 
 $module |
     Out-File .\GroupPolicyEx.build\GroupPolicyEx.psm1
-

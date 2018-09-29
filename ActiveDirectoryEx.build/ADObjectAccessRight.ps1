@@ -5,6 +5,7 @@ Get-Content -Path ..\ActiveDirectoryEx\Modules\ADObjectAccessRight.psd1 |
     Select-Object -ExpandProperty Line |
     ForEach-Object {
         $module += Get-Content -Path $_.Trim().Trim(",").Trim("'").ToLower().Replace('..\cmdlets\','..\ActiveDirectoryEx\CmdLets\')
+        $module += ""
     }
 
 $module += @'

@@ -5,6 +5,7 @@ Get-Content -Path ..\GroupPolicyEx\Modules\GpoBackupRestore.psd1 |
     Select-Object -ExpandProperty Line |
     ForEach-Object {
         $module += Get-Content -Path $_.Trim().Trim(",").Trim("'").ToLower().Replace('..\cmdlets\','..\GroupPolicyEx\CmdLets\')
+        $module += ""
     }
 
 $module += @'
@@ -36,4 +37,3 @@ Export-ModuleMember `
 
 $module |
     Out-File .\GroupPolicyEx.build\GpoBackupRestore.psm1
-
