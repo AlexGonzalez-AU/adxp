@@ -27,6 +27,8 @@ Export-ModuleMember `
     -Function @(
         'Get-GpoPermission',
         'Set-GpoPermission',
+        'Get-GpoWmiFilter',
+        'Set-GpoWmiFilter',
         'Get-GpoLink',
         'Set-GpoLink',
         'Backup-Gpo',
